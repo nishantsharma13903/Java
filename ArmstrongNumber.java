@@ -1,5 +1,3 @@
-package AS_Recursion;
-
 import java.util.Scanner;
 
 public class ArmstrongNumber {
