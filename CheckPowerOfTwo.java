@@ -14,7 +14,8 @@ public class CheckPowerOfTwo {
     }
 
     public static void main(String[] args) {
-        int n = 102;
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         System.out.println(checkNumber(n, 1));
     }
 
