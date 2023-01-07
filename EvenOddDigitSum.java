@@ -30,7 +30,8 @@ public class EvenOddDigitSum {
     }
 
     public static void main(String[] args) {
-        int n = 67510;
+        Scanner sc = new Scanner();
+        int n = sc.nextInt();
 
         int dc = digitCount(n, 0);
 
