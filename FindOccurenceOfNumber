@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class FindOccurence {
+
+    public static int elementOccur(int[] arr, int ele, int i, int count) {
+        // Base condition
+        if (i == -1) {
+            return count;
+        }
+
+        // Processing logic
+        if (arr[i] == ele) {
+            count++;
+        }
+        i--;
+        return elementOccur(arr, ele, i, count);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter size of array: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter the Element of array");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        System.out.print("Enter the element to be searched: ");
+        int ele = sc.nextInt();
+
+        int count = elementOccur(arr, ele, arr.length - 1, 0);
+        System.out.println(count);
+
+        sc.close();
+    }
+}
