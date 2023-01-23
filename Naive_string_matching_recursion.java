@@ -1,5 +1,3 @@
-package AS_Recursion;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
