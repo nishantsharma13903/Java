@@ -1,5 +1,3 @@
-package Array_Question;
-
 import java.util.Scanner;
 
 class Second_Max_Array{
