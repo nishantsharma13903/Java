@@ -1,5 +1,3 @@
-package Array_Question;
-
 import java.util.Scanner;
 
 public class Sort_Zero_One {
